@@ -12,6 +12,12 @@ function nSpiralRing(n) {
 //  nSpiralRing(3)
 //}
 
+//for (q=0; q<3; q++){
+//  nSpiralRing(5
+//  nSpiralRing(4)
+//  nSpiralRing(3)
+//}
+
 for (q=0; q<9; q++){
   nSpiralRing(6)
   nSpiralRing(5)
