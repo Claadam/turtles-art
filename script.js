@@ -50,4 +50,23 @@ nSpiralRing(5)
 nSpiralRing(4)
 }
 
+function six543Ring30Space() {
+  for (q=0; q<6; q++){
+    nSpiralRing(6)
+    goInvisible(30)
+    nSpiralRing(5)
+    goInvisible(30)
+    nSpiralRing(4)
+    goInvisible(30)
+    nSpiralRing(3)
+    goInvisible(30)
+  }
+  nSpiralRing(6)
+  goInvisible(30)
+  nSpiralRing(5)
+  goInvisible(30)
+  nSpiralRing(4)
+  goInvisible(30)
+}
+
 six543Ring()
