@@ -7,13 +7,20 @@ function nSpiralRing(n) {
   }  
 }
 
-function 4to3Ring() {
+function fourThreeRing() {
 for (q=0; q<12; q++){
   nSpiralRing(4)
   nSpiralRing(3)
 }}
 
-function 543Ring() {
+function fourFourThreeRing() {
+  for (q=0; q<12; q++){
+    nSpiralRing(4)
+    nSpiralRing(4)
+    nSpiralRing(3)
+  }}
+
+function fiveFourThreeRing() {
 for (q=0; q<3; q++){
   nSpiralRing(5)
   nSpiralRing(4)
@@ -21,7 +28,7 @@ for (q=0; q<3; q++){
 }}
 
 
-function 6543Ring {
+function sixFiveFourThreeRing() {
 for (q=0; q<6; q++){
   nSpiralRing(6)
   nSpiralRing(5)
@@ -32,3 +39,5 @@ nSpiralRing(6)
 nSpiralRing(5)
 nSpiralRing(4)
 }
+
+fou
