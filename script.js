@@ -26,6 +26,7 @@ function four43Ring60Space () {
     nSpiralRing(4)
     goInvisible(60)
     nSpiralRing(4)
+    goInvisible(60)
     nSpiralRing(3)
   }}
 
