@@ -7,19 +7,21 @@ function nSpiralRing(n) {
   }  
 }
 
-//for (q=0; q<12; q++){
-//  nSpiralRing(4)
-//  nSpiralRing(3)
-//}
+function 4to3Ring() {
+for (q=0; q<12; q++){
+  nSpiralRing(4)
+  nSpiralRing(3)
+}}
 
-//for (q=0; q<3; q++){
-//  nSpiralRing(5)
-//  nSpiralRing(4)
-//  nSpiralRing(3)
-//}
+function 543Ring() {
+for (q=0; q<3; q++){
+  nSpiralRing(5)
+  nSpiralRing(4)
+  nSpiralRing(3)
+}}
 
 
-function 6to3Ring {
+function 6543Ring {
 for (q=0; q<6; q++){
   nSpiralRing(6)
   nSpiralRing(5)
