@@ -16,6 +16,8 @@ for (q=0; q<12; q++){
 function fourFourThreeRing() {
   for (q=0; q<12; q++){
     nSpiralRing(4)
+    nDegreesLeft(180)
+    go
     nSpiralRing(4)
     nSpiralRing(3)
   }}
@@ -40,4 +42,4 @@ nSpiralRing(5)
 nSpiralRing(4)
 }
 
-fou
+fourFourThreeRing()
