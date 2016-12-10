@@ -18,6 +18,8 @@ function nSpiralRing(n) {
 //  nSpiralRing(3)
 //}
 
+
+function 6to3Ring {
 for (q=0; q<6; q++){
   nSpiralRing(6)
   nSpiralRing(5)
@@ -27,3 +29,4 @@ for (q=0; q<6; q++){
 nSpiralRing(6)
 nSpiralRing(5)
 nSpiralRing(4)
+}
