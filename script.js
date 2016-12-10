@@ -17,7 +17,7 @@ function fourFourThreeRing() {
   for (q=0; q<12; q++){
     nSpiralRing(4)
     nDegreesLeft(180)
-    go
+    goInvisible(30)
     nSpiralRing(4)
     nSpiralRing(3)
   }}
