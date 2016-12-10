@@ -50,4 +50,4 @@ nSpiralRing(5)
 nSpiralRing(4)
 }
 
-four43Ring60Space()
+four3Ring()
