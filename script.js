@@ -8,6 +8,7 @@ function nSpiralRing(n) {
 }
 
 for (q=0; q<12; q++){
+  nSpiralRing(5)
   nSpiralRing(4)
   nSpiralRing(3)
 }
