@@ -24,3 +24,6 @@ for (q=0; q<6; q++){
   nSpiralRing(4)
   nSpiralRing(3)
 }
+nSpiralRing(6)
+nSpiralRing(5)
+nSpiralRing(4)
