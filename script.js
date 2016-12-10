@@ -13,10 +13,18 @@ for (q=0; q<12; q++){
   nSpiralRing(3)
 }}
 
-function four43Ring () {
+function four43Ring30Space () {
   for (q=0; q<6; q++){
     nSpiralRing(4)
     goInvisible(30)
+    nSpiralRing(4)
+    nSpiralRing(3)
+  }}
+
+function four43Ring60Space () {
+  for (q=0; q<6; q++){
+    nSpiralRing(4)
+    goInvisible(60)
     nSpiralRing(4)
     nSpiralRing(3)
   }}
@@ -29,7 +37,7 @@ for (q=0; q<3; q++){
 }}
 
 
-function sixFiveFourThreeRing() {
+function six543Ring() {
 for (q=0; q<6; q++){
   nSpiralRing(6)
   nSpiralRing(5)
@@ -41,4 +49,4 @@ nSpiralRing(5)
 nSpiralRing(4)
 }
 
-four43Ring()
+four43Ring60Space()
