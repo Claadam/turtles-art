@@ -1,3 +1,79 @@
+$("#polygon-button").click(function() { 
+  var numberOfSides = $("#polygon").val()
+  nSides(numberOfSides)
+})
+
+$("#star-button").click(function() { 
+  var numberOfPoints = $("#star").val()
+  nPoints(numberOfPoints)
+})
+
+$("#ring-button").click(function() { 
+  var typeOfRing = $("#ring").val()
+  drawRing(typeOfRing)
+})
+
+$("#star-ring-button").click(function() { 
+  var typeOfStarRing = $("#star-ring").val()
+  nStarRing(typeOfStarRing)
+})
+
+$("#spiral-button").click(function() { 
+  var typeOfSpiral = $("#spiral").val()
+  nSpiral(typeOfSpiral)
+})
+
+$("#spiral-ring-button").click(function() { 
+  var typeOfSpiralRing = $("#spiral-ring").val()
+  nSpiralRing(typeOfSpiralRing)
+})
+
+
+function nPoints(n) {
+  for (i=0; i<n; i++) {
+    goForward(360/n)
+    nDegreesLeft(720/n)
+    goForward(360/n)
+    nDegreesRight(360/n)
+  }
+}
+
+function nSides(n) {
+  for (i=0; i<n; i++) {
+  goForward(720/n)
+  nDegreesLeft(360/n)
+  }
+}
+
+function drawRing(n) {
+  for (i=0; i<n; i++) {
+    goForward(360/n)
+    nDegreesLeft(360/n)
+  }
+  for (j=0; j<360/n; j++){
+    goForward(360/n)
+    nDegreesLeft((360/n)+1)
+  }
+}
+
+function nStarRing(n) {
+  for (j=0; j<360/n; j++){
+    goForward(180/n)
+    nDegreesLeft((720/n)+1)
+    goForward(360/n)
+    nDegreesRight((360/n))
+  }
+}
+
+function nSpiral(n) {
+  for (j=0; j<n; j++){
+    goForward(180/n)
+    nDegreesLeft((720/n))
+    goForward(360/n)
+    nDegreesRight((360/n))
+  }  
+}
+
 function nSpiralRing(n) {
   for (j=0; j<360/n; j++){
     goForward(180/n)
@@ -7,73 +83,23 @@ function nSpiralRing(n) {
   }  
 }
 
-function four3Ring() {
-for (q=0; q<12; q++){
-  nSpiralRing(4)
-  nSpiralRing(3)
-}}
-
-function four43Ring30Space () {
-  for (q=0; q<6; q++){
-    nSpiralRing(4)
-    goInvisible(30)
-    nSpiralRing(4)
-    nSpiralRing(3)
-  }}
-
-function four43Ring60Space () {
-  for (q=0; q<6; q++){
-    nSpiralRing(4)
-    goInvisible(60)
-    nSpiralRing(4)
-    goInvisible(60)
-    nSpiralRing(3)
-  }}
-
-function five43Ring() {
-for (q=0; q<3; q++){
-  nSpiralRing(5)
-  nSpiralRing(4)
-  nSpiralRing(3)
-}}
-
-function six54Ring() {
- for (q=0; q<10; q++)
-   nSpiralRing(6)
-   nSpiralRing(5)
-   nSpiralRing(4)
-}
+// for (i=0; i<4; i++) {
+//   goForward(90)
+//   nDegreesLeft(90)}
+//
+//for (i=0; i<3; i++) {
+//  goForward(60)
+//  nDegreesLeft(120)}
+//
+//
+////for (j=0; j<90; j++){
+////  goForward(90)
+////  nDegreesLeft(90+1)
+////}
+//  
+//for (j=0; j<120; j++){
+//  goForward(60)
+//  nDegreesLeft(120+1)
+//}
 
 
-function six543Ring() {
-for (q=0; q<6; q++){
-  nSpiralRing(6)
-  nSpiralRing(5)
-  nSpiralRing(4)
-  nSpiralRing(3)
-}
-nSpiralRing(6)
-nSpiralRing(5)
-nSpiralRing(4)
-}
-
-function six543Ring30Space() {
-  for (q=0; q<6; q++){
-    nSpiralRing(6)
-    goInvisible(30)
-    nSpiralRing(5)
-    goInvisible(30)
-    nSpiralRing(4)
-    goInvisible(30)
-    nSpiralRing(3)
-    goInvisible(30)
-  }
-  nSpiralRing(6)
-  goInvisible(30)
-  nSpiralRing(5)
-  goInvisible(30)
-  nSpiralRing(4)
-  goInvisible(30)
-}
-
-six54Ring()
