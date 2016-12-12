@@ -38,9 +38,10 @@ for (q=0; q<3; q++){
 }}
 
 function six54Ring() {
- for (q=0; q<1; q++)
+ for (q=0; q<10; q++)
    nSpiralRing(6)
-  
+   nSpiralRing(5)
+   nSpiralRing(4)
 }
 
 
@@ -75,4 +76,4 @@ function six543Ring30Space() {
   goInvisible(30)
 }
 
-six543Ring()
+six54Ring()
