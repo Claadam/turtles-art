@@ -1,16 +1,16 @@
-$("#polygon").keydown(function(e) {	
+$(document).keydown(function(e) {	
   if (e.keyCode == "39") {
     nDegreesRight(22.5)
   }
 })
 
-$("#polygon").keydown(function(e) {	
+$(document).keydown(function(e) {	
   if (e.keyCode == "38") {
    goForward(10)
   }
 })
 
-$("#polygon").keydown(function(e) {	
+$(document).keydown(function(e) {	
   if (e.keyCode == "37") {
     nDegreesRight(22.5)
   }
