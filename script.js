@@ -37,6 +37,12 @@ for (q=0; q<3; q++){
   nSpiralRing(3)
 }}
 
+function six54Ring() {
+ for (q=0; q<1; q++)
+   nSpiralRing(6)
+  
+}
+
 
 function six543Ring() {
 for (q=0; q<6; q++){
