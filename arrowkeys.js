@@ -1,6 +1,6 @@
 $("#polygon").keydown(function(e) {	
   if (e.keyCode == "39") {
-    nDegreesRight(10)
+    nDegreesRight(22.5)
   }
 })
 
@@ -12,7 +12,7 @@ $("#polygon").keydown(function(e) {
 
 $("#polygon").keydown(function(e) {	
   if (e.keyCode == "37") {
-    nDegreesRight(10)
+    nDegreesRight(22.5)
   }
 })
 
