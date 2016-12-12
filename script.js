@@ -40,8 +40,8 @@ function nPoints(n) {
 
 function nSides(n) {
   for (i=0; i<n; i++) {
-  goForward(720/n)
-  nDegreesLeft(360/n)
+    goForward(720/n)
+    nDegreesLeft(360/n)
   }
 }
 
@@ -58,7 +58,7 @@ function drawRing(n) {
 
 function nStarRing(n) {
   for (j=0; j<360/n; j++){
-    goForward(180/n)
+    goForward(360/n)
     nDegreesLeft((720/n)+1)
     goForward(360/n)
     nDegreesRight((360/n))
